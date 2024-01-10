@@ -1,0 +1,363 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: 'Pixelify Sans', sans-serif;
+}
+
+
+header {
+	width: 100%;
+	background-color: rgb(71, 46, 104);
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-evenly;
+	align-items: center;
+	.logo {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.header_info {
+		color: white;
+		font-size: 14px;
+		width: 25%;
+		margin-left: 5px;
+	}
+	.social_buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 25%;
+		a {
+			width: 35%;
+			padding: 0px 1px;
+		}
+		img {
+			width: 100%;
+			filter: grayscale(0.5);
+		}
+		.x_logo {
+			margin-bottom: 5px;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+	}
+
+	.button {
+		background-color: rgb(102, 102, 102);
+		color: rgb(255, 255, 255);
+		text-align: center;
+		padding: 2px;
+		border-radius: 4px;
+		width: 25%;
+		height: 40px;
+		border-radius: 2px;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		box-shadow: rgba(129, 138, 90, 0.2) 0px 7px 29px 0px;
+
+		font-size: 19px;
+		transition: 0.5s;
+
+		&:hover {
+			background-color: rgb(83, 83, 83);
+		}
+	}
+}
+
+main {
+	padding-top: 20px;
+	background-color: #a4508b;
+	background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+
+	.top_main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10px;
+
+		.left {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 90%;
+				height: auto;
+				padding: 15px;
+			}
+		}
+		.right {
+			width: 100%;
+			padding: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(75, 75, 75, 0.4);
+			border-radius: 16px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(4.4px);
+			-webkit-backdrop-filter: blur(4.4px);
+			border: 1px solid rgba(75, 75, 75, 0.44);
+
+			h1 {
+				font-size: 26px;
+				color: white;
+				padding: 10px 0;
+			}
+			p {
+				color: white;
+				font-size: 18px;
+				letter-spacing: 2px;
+			}
+		}
+	}
+
+	.team {
+		color: white;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		h1 {
+			text-align: center;
+			padding: 20px 0;
+			font-size: 54px;
+			margin-bottom: 5px;
+		}
+		h2 {
+			margin-bottom: 5px;
+			font-size: 28px;
+		}
+		img {
+			background: rgba(75, 75, 75, 0.4);
+			border-radius: 16px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(4.4px);
+			-webkit-backdrop-filter: blur(4.4px);
+			border: 1px solid rgba(75, 75, 75, 0.44);
+			margin-bottom: 5px;
+			width: 50%;
+		}
+		p {
+			font-size: 22px;
+		}
+
+		.kuba {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 30px 0;
+		}
+		.patryk {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 30px 0;
+		}
+		.maks {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 30px 0;
+		}
+		.julia {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 30px 0;
+		}
+	}
+
+	.important {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		color: white;
+
+		h1 {
+			text-align: center;
+			font-size: 54px;
+			margin-bottom: 10px;
+		}
+		h2 {
+			margin-bottom: 15px;
+			color: rgb(209, 43, 43);
+			text-align: center;
+			background: rgba(61, 61, 61, 0.43);
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			border: 1px solid rgba(61, 61, 61, 0.3);
+		}
+
+		.links {
+			display: flex;
+			flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+			img {
+				width: 20%;
+			}
+			p {
+				margin-right: 10px;
+				font-size: 23px;
+			}
+			a {
+				font-size: 23px;
+				text-decoration: none;
+				color: #13a533;
+			}
+
+			.contract {
+				display: flex;
+				flex-wrap: wrap;
+				padding-bottom: 10px;
+			}
+			.twitter {
+				display: flex;
+				padding-bottom: 10px;
+			}
+			.discord {
+				display: flex;
+				padding-bottom: 10px;
+			}
+			.opensea {
+				display: flex;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+// BREAKPOINTS
+
+@media (min-width: 768px) {
+	header {
+		padding: 30px;
+		flex-wrap: nowrap;
+		.button {
+			width: 200px;
+			height: 60px;
+			border-radius: 5px;
+		}
+
+		.header_info {
+			font-size: 22px;
+			width: 20%;
+			span {
+				color: #13a533;
+			}
+		}
+
+		.logo {
+			width: 20%;
+			margin-bottom: 0;
+		}
+
+		.social_buttons {
+			flex-direction: row;
+			justify-content: space-evenly;
+			a {
+				width: 12%;
+				padding: 5px;
+			}
+		}
+	}
+
+	main {
+		.top_main {
+			padding: 20px;
+			flex-direction: row;
+
+			.right {
+				h1 {
+					font-size: 54px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+
+			.left {
+				img {
+					padding: 0;
+					width: 65%;
+				}
+			}
+		}
+		.team {
+			flex-direction: column;
+
+			.members {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-around;
+
+				.kuba {
+					width: 23%;
+				}
+				.patryk {
+					width: 23%;
+				}
+				.maks {
+					width: 23%;
+				}
+				.julia {
+					width: 23%;
+				}
+			}
+		}
+        .important{
+           
+background: rgba(61, 61, 61, 0.43);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(61, 61, 61, 0.3);
+            h1{
+                margin-bottom: 20px;
+            }
+            h2{
+                margin-bottom: 30px;
+            }
+          .links{
+            p{
+                font-size: 36px;
+                margin-right: 15px;
+            }
+            a{
+                font-size: 36px;
+            }
+          }
+        }
+	}
+}
